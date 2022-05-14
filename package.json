@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib dist",
+    "prepublish": "npm run clean && npm run build",
     "build": "babel src --out-dir lib"
   },
   "repository": {
